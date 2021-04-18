@@ -5,7 +5,7 @@ source $HOME/.cargo/env
 # export PATH="$PATH:/usr/lib/jvm/default/bin"
 
 if [ (uname -s) = "Darwin" ]
-    set -x HOMEBREW_BOTTLE_DOMAIN https://mirrors.ustc.edu.cn/homebrew-bottles
+    # set -x HOMEBREW_BOTTLE_DOMAIN https://mirrors.ustc.edu.cn/homebrew-bottles
     # set -x HOMEBREW_BOTTLE_DOMAIN https://mirrors.geekpie.club/homebrew-bottles
 end
 alias py="ipython"
