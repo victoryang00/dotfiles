@@ -102,7 +102,7 @@ live_config_reload: true
 shell:
   program: /bin/bash
   args:
-    - /home/robertking/.myutils/bin/alacritty-launch
+    - /home/victoryang/.myutils/bin/alacritty-launch
 
 enable_experimental_conpty_backend: false
 

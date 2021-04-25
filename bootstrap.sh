@@ -56,8 +56,8 @@ function git_conf() {
     git config --global commit.gpgsign true
     git config --global user.signingkey 3DBB35F87E3E0A51
     # git config --global https.proxy socks5h://127.0.0.1:1080
-    git config --global user.email superobertking@icloud.com
-    git config --global user.name robertking
+    git config --global user.email yangyiwei2000@gmail.com
+    git config --global user.name victoryang00
     git config --global core.excludesfile ~/.gitignore_global
     echo ".DS_Store" >> ~/.gitignore_global
 

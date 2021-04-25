@@ -1,4 +1,6 @@
-source $HOME/.cargo/env
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/CLion.app/Contents/MacOS/:Applications/GoLand.app/Contents/MacOS:/Applications/PyCharm.app/Contents/MacOS"
+export PATH="$PATH:/Users/victoryang/.cargo/bin:/usr/local/bin"
+alias strace=dtruss
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 [ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish
 # source /etc/modules/init/fish
@@ -73,13 +75,13 @@ alias tmuxa='tmux a -t daily || tmux new -s daily'
 alias em='emacs -nw'
 
 if [ (uname -s) = "Darwin" ]
-    set -x PAGER '/usr/local/bin/less -is -R --mouse'
+    set -x PAGER '/usr/local/bin/less -is -R '
 else
     set -x -a PERL5LIB /usr/share/tlpkg
     alias tlmgr '/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
 end
 
-set -x LESS '-R --mouse'
+set -x LESS '-R'
 set -x EDITOR 'nvim'
 
 function hybrid_bindings --description "Vi-style bindings that inherit emacs-style bindings in all modes"

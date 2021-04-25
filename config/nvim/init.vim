@@ -184,9 +184,9 @@ let g:NERDSpaceDelims = 1
 Plug 'vim-scripts/loremipsum'
 
 Plug 'alpertuna/vim-header'
-let g:header_field_author = 'robertking'
+let g:header_field_author = 'yiweiyang'
 let g:header_auto_add_header = 0
-let g:header_field_author_email = 'superobertking@icloud.com'
+let g:header_field_author_email = 'yangyiwei2000@gmail.com'
 let g:header_alignment = 0
 let g:header_field_timestamp_format = '%m/%d/%Y %T'
 
@@ -316,7 +316,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Plug 'sebastianmarkow/deoplete-rust' ", { 'for': 'rust' }
 
-" let g:deoplete#sources#rust#racer_binary='/Users/robertking/.cargo/bin/racer'
+" let g:deoplete#sources#rust#racer_binary='/Users/vicoryang/.cargo/bin/racer'
 let g:deoplete#sources#rust#show_duplicates=0
 " set completeopt=longest,menuone
 
@@ -403,7 +403,7 @@ set splitright
 
 " Settings for Rust
 " let g:rustfmt_autosave = 1
-" let g:racer_cmd = '/Users/robertking/.cargo/bin/racer'
+" let g:racer_cmd = '/Users/victoryang/.cargo/bin/racer'
 let g:racer_experimental_completer = 1
 let g:racer_insert_paren = 1
 
