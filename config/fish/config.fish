@@ -1,5 +1,7 @@
+#source /Users/victoryang/spack/share/spack/setup-env.fish
+export PATH="/usr/local/bin:/usr/local/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/CLion.app/Contents/MacOS/:Applications/GoLand.app/Contents/MacOS:/Applications/PyCharm.app/Contents/MacOS"
-export PATH="$PATH:/Users/victoryang/.cargo/bin:/usr/local/bin"
+export PATH="/usr/local/Cellar/open-mpi/4.1.1/bin/:$PATH:/Users/victoryang/.cargo/bin:/usr/local/bin:/usr/local/Cellar/gdb/10.2/bin/"
 alias strace=dtruss
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 [ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish
@@ -115,10 +117,15 @@ function llt --description 'List file in long mode tree'
     exa -lRT $argv
 end
 
-abbr du dua
+abbr du dust
 abbr cat bat
+abbr curl curlie
+abbr find fd
+
 
 starship init fish | source
 
 alias asdf='setxkbmap dvorak'
 alias aoeu='setxkbmap us'
+set -g fish_user_paths "/usr/local/opt/qt@5/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/qt@5/bin" $fish_user_paths

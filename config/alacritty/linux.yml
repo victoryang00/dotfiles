@@ -350,9 +350,3 @@ key_bindings:
   - { key: K,     mods: Command|Shift, chars: "\x02\x1b[1;3B" }
   - { key: O,     mods: Command|Shift, chars: "\x02\x1b[1;3A" }
   - { key: L,     mods: Command|Shift, chars: "\x02\x1b[1;3C" }
-  # - { key: Left,  mods: Command,       chars: "\x02\x1b[1;3D" }
-  # - { key: Down,  mods: Command,       chars: "\x02\x1b[1;3B" }
-  # - { key: Up,    mods: Command,       chars: "\x02\x1b[1;3A" }
-  # - { key: Right, mods: Command,       chars: "\x02\x1b[1;3C" }
-
-# vim: set tabstop=2 softtabstop=2 shiftwidth=2:
