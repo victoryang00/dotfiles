@@ -1,5 +1,6 @@
-#source /Users/victoryang/spack/share/spack/setup-env.fish
-export PATH="/usr/local/bin:/usr/local/bin:$PATH"
+export NOOP_HOME=$HOME/project/xiangshan
+source /Users/victoryang/spack/share/spack/setup-env.fish
+export PATH="/usr/local/bin:/usr/local/bin:/Applications/CLion.app/Contents/bin/:/Applications/GoLand.app/Contents/bin/:/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/CLion.app/Contents/MacOS/:Applications/GoLand.app/Contents/MacOS:/Applications/PyCharm.app/Contents/MacOS"
 export PATH="/usr/local/Cellar/open-mpi/4.1.1/bin/:$PATH:/Users/victoryang/.cargo/bin:/usr/local/bin:/usr/local/Cellar/gdb/10.2/bin/"
 alias strace=dtruss
@@ -121,7 +122,9 @@ abbr du dust
 abbr cat bat
 abbr curl curlie
 abbr find fd
-
+abbr top bottom
+abbr diff delta
+abbr sed sd
 
 starship init fish | source
 
@@ -129,3 +132,6 @@ alias asdf='setxkbmap dvorak'
 alias aoeu='setxkbmap us'
 set -g fish_user_paths "/usr/local/opt/qt@5/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/qt@5/bin" $fish_user_paths
+
+# opam configuration
+source /Users/victoryang/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
