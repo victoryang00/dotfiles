@@ -11,15 +11,11 @@ function log() {
 
 function aur_get() {
     mkdir -p $local_aur_repos/$1
-    export http_proxy=http://127.0.0.1:1081
-    export https_proxy=http://127.0.0.1:1081
-    # set -e http_proxy
-    # set -e https_proxy
     log git clone $aur_base_url/$1.git $local_aur_repos/$1
 }
 
 function print_help() {
-    echo "Usage: ${command_name} get|install|upgrade <packages...>"
+    echo "Usage: ${command_name} get|list|install|upgrade <packages...>"
 }
 
 function do_pkgbuild() {
@@ -37,7 +33,7 @@ function do_pkgbuild() {
 }
 
 function main() {
-    if [[ $# -lt 2 ]]; then
+    if [[ $# -lt 2 ]] && [[ $1 -ne 'list' ]]; then
         print_help
         return
     fi
@@ -60,6 +56,9 @@ function main() {
             git clean -f && git pull
             do_pkgbuild
         done
+        ;;
+    list)
+        ls $local_aur_repos
         ;;
     help|*)
         print_help

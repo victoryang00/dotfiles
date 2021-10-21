@@ -59,6 +59,11 @@ function git_conf() {
     git config --global user.email yangyiwei2000@gmail.com
     git config --global user.name victoryang00
     git config --global core.excludesfile ~/.gitignore_global
+    # Stash without GPG signing: https://stackoverflow.com/a/24429205
+    git config --global alias.stashq '-c commit.gpgsign=false stash'
+    if [[ $(uname -s) == "Darwin" ]]; then
+        git config core.ignorecase false
+    fi
     echo ".DS_Store" >> ~/.gitignore_global
 
     # Useful commands:
