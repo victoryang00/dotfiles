@@ -2,8 +2,8 @@
 
 if [[ $(uname -s) == "Darwin" ]]; then
     # Homebrew installed fish and tmux
-    TMUX_BIN=/usr/local/bin/tmux
-    FISH_BIN=/usr/local/bin/fish
+    TMUX_BIN=/opt/homebrew/bin/tmux
+    FISH_BIN=/opt/homebrew/bin/fish
 else
     TMUX_BIN=/usr/bin/tmux
     FISH_BIN=/usr/bin/fish

@@ -1,8 +1,9 @@
+export MODULAR_HOME="$HOME/.modular"
+export PATH="$HOME/.modular/pkg/packages.modular.com_nightly_mojo/bin:$PATH"
 export NOOP_HOME=$HOME/project/xiangshan
-source /Users/victoryang/spack/share/spack/setup-env.fish
-export PATH="/usr/local/bin:/usr/local/bin:/Applications/CLion.app/Contents/bin/:/Applications/GoLand.app/Contents/bin/:/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
+export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/bin:/Applications/CLion.app/Contents/bin/:/Applications/GoLand.app/Contents/bin/:/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH:/usr/local/texlive/2023/bin/universal-darwin/"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/CLion.app/Contents/MacOS/:Applications/GoLand.app/Contents/MacOS:/Applications/PyCharm.app/Contents/MacOS"
-export PATH="/usr/local/Cellar/open-mpi/4.1.1/bin/:$PATH:/Users/victoryang/.cargo/bin:/usr/local/bin:/usr/local/Cellar/gdb/10.2/bin/"
+export PATH="/usr/local/Cellar/open-mpi/4.1.1/bin/:$PATH:$HOME/.cargo/bin:/usr/local/bin:/usr/local/Cellar/gdb/10.2/bin/"
 alias strace=dtruss
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 [ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish
@@ -147,4 +148,15 @@ set -g fish_user_paths "/usr/local/opt/qt@5/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/qt@5/bin" $fish_user_paths
 
 # opam configuration
-source /Users/victoryang/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+source $HOME/spack/share/spack/setup-env.fish
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /Users/victoryang00/miniforge3/bin/conda
+    eval /Users/victoryang00/miniforge3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+
+#export MODULAR_HOME="/Users/victoryang00/.modular"
+#export PATH="/Users/victoryang00/.modular/pkg/packages.modular.com_mojo/bin:$PATH"

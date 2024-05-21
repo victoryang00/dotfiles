@@ -5,7 +5,7 @@ window:
   dimensions:
     columns: 120
     lines: 42
-
+  opacity: 0.8
   padding:
     x: 2
     y: 2
@@ -33,7 +33,6 @@ font:
     x: 0
     y: 0
 
-  use_thin_strokes: false
 
 draw_bold_text_with_bright_colors: true
 
@@ -70,8 +69,6 @@ bell:
     program: osascript
     args: [-e, "beep"]
 
-background_opacity: 0.8
-
 debug:
   render_timer: false
   persistent_logging: true
@@ -88,9 +85,6 @@ mouse:
 
   hide_when_typing: true
 
-  url:
-    modifiers: None
-
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: false
@@ -103,10 +97,7 @@ cursor:
 live_config_reload: true
 
 shell:
-   program: /usr/local/bin/fish
-  #  args:
-  #    - /Users/yiweiyang/.myutils/bin/alacritty-launch
+   program: /opt/homebrew/bin/fish
 
 enable_experimental_conpty_backend: false
 
-alt_send_esc: true

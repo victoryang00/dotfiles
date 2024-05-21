@@ -557,7 +557,7 @@ set splitright
 
 " Settings for Rust
 " let g:rustfmt_autosave = 1
-" let g:racer_cmd = '/Users/victoryang/.cargo/bin/racer'
+" let g:racer_cmd = '/Users/victoryang00/.cargo/bin/racer'
 let g:racer_experimental_completer = 1
 let g:racer_insert_paren = 1
 
